@@ -6,11 +6,14 @@ const navItems = navLinks.querySelectorAll('a');
 function closeMenu() {
     navLinks.classList.remove('open');
     overlay.classList.remove('show');
+    document.body.classList.remove('bodylock');
+           
   }
   
   hamburger.addEventListener('click', () => {
     navLinks.classList.add('open');
     overlay.classList.add('show');
+    document.body.classList.add('bodylock');
   });
   
   closeBtn.addEventListener('click', closeMenu);
