@@ -47,14 +47,14 @@ body {
 }
 
 #element {
-    width: 400px;
-    height: 35px;
+    width: 650px;
+    height: 70px;
     margin-bottom: 30px;
     align-items: center;
     justify-content: center;
     color: rgb(111, 111, 238);
 
-    display: inline-block;
+    display: flex;
     /* Prevents block-level overflow */
     white-space: nowrap;
     /* Prevents text wrapping */
@@ -216,7 +216,7 @@ a {
     }
 
     #element {
-        width: 400px;
+        width: 450px;
         height: 35px;
         align-items: center;
         justify-content: center;
