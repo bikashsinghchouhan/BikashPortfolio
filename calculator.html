@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1 : Calculator</title>
+    <!-- linking external css-->
+    <style>
+        body {
+            margin: 0px;
+            padding-top: 0px;
+
+
+
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100vh;
+
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 425px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            section h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .container {
+                padding: 10px;
+                width: 100%;
+                height: 80vh;
+                border: 2px solid rgb(108, 105, 105);
+                border-radius: 10px;
+                background: #e3f9ff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+
+        @media (max-width: 320px) {
+            .container {
+                padding: 10px;
+
+                border: 2px solid rgb(108, 105, 105);
+                border-radius: 10px;
+                background: #e3f9ff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+            }
+
+          input {
+                width: 44px;
+                height: 48px;
+            }
+        }
+
+        .container {
+            padding-top: 5px;
+            width: 100%;
+            height: 80vh;
+            border: 2px solid rgb(108, 105, 105);
+            border-radius: 10px;
+            background: #e3f9ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .Calculator {
+            background-color: #3a4452;
+            padding: 10px;
+
+            border-radius: 10px;
+        }
+
+        .Calculator form input {
+            border: 0px;
+            outline: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+            background: transparent;
+            margin: 10px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        form .display {
+            display: flex;
+            justify-content: flex-end;
+            margin: 20px, 0;
+        }
+
+        form .display input {
+            text-align: right;
+            flex: 1;
+            font-size: 45px;
+            box-shadow: none;
+        }
+
+        #equal {
+            width: 145px;
+
+            flex-grow: 1;
+        }
+
+
+
+
+        .container2 {
+
+            margin-top: 10px;
+            padding-top: 20px;
+            width: 100%;
+            height: 100vh;
+            background: #e3f9ff;
+            text-align: center;
+            border: 2px solid rgb(108, 105, 105);
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="heading">
+        <h1>Fully working Calculator</h1>
+    </nav>
+    <!---- <p>calculator</p>  ---->
+    <div class="container">
+        <div class="Calculator">
+            <Form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value =''">
+                    <input type="button" value="DE" onclick="display.value =display.value.toString().slice(0,-1)">
+                    <input type="button" value="." onclick="display.value +='.'">
+                    <input type="button" value="/" onclick="display.value +='/'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value +='7'">
+                    <input type="button" value="8" onclick="display.value +='8'">
+                    <input type="button" value="9" onclick="display.value +='9' ">
+                    <input type="button" value="*" onclick="display.value +='*'">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="display.value +='4'">
+                    <input type="button" value="5" onclick="display.value +='5'">
+                    <input type="button" value="6" onclick="display.value +='6'">
+                    <input type="button" value="-" onclick="display.value +='-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value +='1'">
+                    <input type="button" value="2" onclick="display.value +='2'">
+                    <input type="button" value="3" onclick="display.value +='3'">
+                    <input type="button" value="+" onclick="display.value +='+'">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value +='00'">
+                    <input type="button" value="0" onclick="display.value +='0'">
+                    <input type="button" value="=" id="equal" onclick="display.value=eval(display.value)">
+
+                </div>
+            </Form>
+
+
+
+        </div>
+    </div>
+    <!--  <div class="container2">
+        <h2>This is fully working calculator - </h2>
+        <h2>video of the code executing step is below </h2>
+       <video width="640" height="360" control>
+            <source src="C:\Users\bikas\Videos\2025-03-16 23-13-34.mkv" type="video/mkv">
+        </video>
+    </div>-->
+
+
+
+
+
+    <footer id="copyright">
+        <p>&copy; <span id="year"></span> Bikash Singh Chauhan All rights reserved.</p>
+        <p>Time : <span id="time"></span> <span id="date"></span></p>
+    </footer>
+</body>
+<script>
+
+     setInterval(
+            function () {
+    let d = new Date();
+    let H=d.getHours();
+    H=H%12;
+    let m = d.getMinutes();
+    let S=d.getSeconds();
+    
+
+    document.getElementById('date').innerHTML= d;
+    // document.getElementById('time').innerHTML= H +":"+m+":"+S ;
+   
+    }, 1000
+
+        );
+
+    </script>
+
+</html>
