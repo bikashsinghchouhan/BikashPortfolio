@@ -61,9 +61,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: rgb(238, 123, 123);
-    width:100%;
-    padding: 10px;
-    border-radius: 10px;
+    
 }
 nav h1 a{
     text-decoration: none;
@@ -136,8 +134,8 @@ nav h1 a{
         left:0;
     }
     .nav-links li{
-        margin:20px 0;
-        padding:0 20px;
+        margin:10px 0;
+        padding:0 25px;
 
     }
     .nav-links li a{
