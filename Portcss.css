@@ -875,4 +875,9 @@ nav h1 a{
     }
 }
 
+/* to lock the sidebar body scroll  */
+.bodylock{
+    overflow: hidden;
+    height: 100%;
+}
 
