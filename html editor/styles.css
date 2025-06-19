@@ -20,7 +20,13 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-
+@media(max-width:768px){
+  .editors {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+}
 textarea {
   width: 95%;
   height: 200px;
