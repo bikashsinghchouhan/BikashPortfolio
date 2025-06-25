@@ -27,10 +27,10 @@ function closeMenu() {
 
 // disable right click
 // Disable right-click
-// document.addEventListener("contextmenu", function (e) {
-//   e.preventDefault();
-//   alert("Right-click is disabled!");
-// });
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+  alert("Right-click is disabled!");
+});
 
 // Disable keyboard shortcuts
 document.addEventListener("keydown", function (e) {
