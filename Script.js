@@ -66,7 +66,7 @@ document.addEventListener("keydown", function (e) {
   }
 
   // Disable right-click with custom popup
-  document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-    showCustomPopup("🚫 Right-click is disabled!");
-  });
+  //document.addEventListener("contextmenu", function (e) {
+  //  e.preventDefault();
+   // showCustomPopup("🚫 Right-click is disabled!");
+  //});
