@@ -27,3 +27,37 @@ jsCode.addEventListener('input', updatePreview);
 
 // Initial load
 updatePreview();
+
+
+
+
+
+
+
+
+// Disable right-click
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+  alert("Right-click is disabled!");
+});
+
+// Disable keyboard shortcuts
+document.addEventListener("keydown", function (e) {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
+    (e.ctrlKey && ["U", "S", "P", "C", "X", "V"].includes(e.key))
+  ) {
+    e.preventDefault();
+    alert("This action is disabled!");
+  }
+});
+
+// Disable copy, paste, cut
+["copy", "paste", "cut"].forEach(eventType => {
+  document.addEventListener(eventType, function (e) {
+    e.preventDefault();
+    alert(`${eventType.charAt(0).toUpperCase() + eventType.slice(1)} is disabled!`);
+  });
+});
+
