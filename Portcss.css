@@ -630,7 +630,13 @@ ul.inline-list li {
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: inline-block;
+    border-bottom:3px solid white;
    
+}
+.project-box:hover {
+
+    background-color: #321727;
+    transition: .2s ease-in-out;
 }
 
 .project-box h1 {
