@@ -525,7 +525,7 @@ ul.inline-list li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 10px;
+    padding: 30px;
 
 
 }
