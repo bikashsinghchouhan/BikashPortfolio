@@ -634,7 +634,7 @@ ul.inline-list li {
    
 }
 .project-box:hover {
-
+    scale:1.08;
     background-color: #321727;
     transition: .2s ease-in-out;
 }
