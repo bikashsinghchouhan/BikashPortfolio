@@ -82,7 +82,7 @@ hr{
 .thirdSection,
 .forthSection,
 .fifthSection {
-    max-width: 84vw;
+    max-width: 97vw;
     height: auto;
     margin-bottom: 100px;
 }
@@ -463,14 +463,12 @@ ul.inline-list li {
 
 
 /*-----------about section ------------*/
-#about h1{
-     transform: translateY(10px);
 
-}
 .about {
     width: 100%;
-    margin: 30px;
-  
+    margin: 0px;
+    text-align: justify;
+    padding:20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -522,14 +520,6 @@ ul.inline-list li {
     margin-bottom: 20px;
 }
 
-
-
-.mySkills {
-    transform: translateX(30px);
-    margin: 30px;
-
-
-}
 
 .skills-section {
     display: grid;
