@@ -112,10 +112,6 @@ hr{
     border-radius: 10px;
 }
 
-.Resume:hover {
-    background-color: rgb(184, 236, 236);
-    transition: 0.3s;
-}
 
 .Resume a {
     padding: 10px;
