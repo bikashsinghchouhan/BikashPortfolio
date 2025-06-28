@@ -123,6 +123,10 @@ hr{
     color: white;
 
 }
+.Resume a:hover {
+   color:black;
+   transition: 0.3s;
+}
 
 
 
