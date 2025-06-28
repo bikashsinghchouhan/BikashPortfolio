@@ -87,7 +87,7 @@ hr{
 }
 .forthSection {
     padding-top: 40px;
-    background-color: rgba(196, 0, 245, 0.645);
+    background-color: #c400f5a4;;
 }
 
 .secondSection h1 {
@@ -617,7 +617,7 @@ ul.inline-list li {
     height: 300px;
     margin: 20px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+     background: #0c0824;
     backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
