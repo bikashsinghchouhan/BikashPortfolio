@@ -13,7 +13,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <style>
        
@@ -337,27 +343,7 @@
             loop: true // Makes it run infinitely
 
         });
-    </script>
-
-    <!-- GSAP Animation of education section-->
-    <script>
-        gsap.from(".timeline-item", {
-            opacity: 0,
-            y: 50,
-            duration: 1,
-            stagger: 0.5,
-            ease: "power2.out"
-        });
-
-        gsap.from(".content-timeline", {
-            scale: 0.8,
-            opacity: 0,
-            duration: 1.5,
-            stagger: 0.5,
-            ease: "elastic.out(1, 0.5)"
-        });
-
-    </script>
+   
     <!----------------Scroll bar---------------------->
     <script>
         const scrollBtn = document.getElementById("scrollBtn");
