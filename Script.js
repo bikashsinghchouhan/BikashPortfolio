@@ -121,7 +121,7 @@ gsap.from(".secondSection h1,h5", {
   ease: "power2.out",
   opacity: 0,
   duration: 1,
-  delay: 0,
+  delay: 0.1,
   stagger: 0.5,
 })
 
