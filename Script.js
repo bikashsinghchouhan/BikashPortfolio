@@ -79,30 +79,22 @@ document.addEventListener("keydown", function (e) {
 //gsap Animation
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".leftSection", {
+
+
+
+
+gsap.from(".contact,.Resume", {
   scrollTrigger: {
-    trigger: ".leftSection ",
+    trigger: ".contact,.Resume",
     toggleActions: "play reset play reset"
   },
   y: 30,
   ease: "power2.out",
+  opacity: 0,
   duration: 1,
   delay: 0,
   stagger: 0.5,
-})
-
-
-
-gsap.from(".contact, .resume", {
-  scrollTrigger: {
-    trigger: ".contact,.resume ",
-    toggleActions: "play reset play reset"
-  },
-  y: 30,
-  ease: "power2.out",
-  duration: 1,
-  delay: 0,
-  stagger: 0.5,
+  
 })
 
 gsap.from(".rightSection img,hr", {
