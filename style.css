@@ -53,15 +53,15 @@ nav ul li a {
     color: var(--light-text);
     font-weight: 400;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     padding: 10px;
 
 }
 
 nav ul li a:hover {
-    background-color: rgb(238, 123, 123);
-    
+    background-color: rgb(109, 107, 107);
+    width:100%;
 }
 nav h1 a{
     text-decoration: none;
