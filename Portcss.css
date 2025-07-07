@@ -684,6 +684,7 @@ ul.inline-list li {
         .skills-image img {
             padding-left: 0;
             width: 110%;
+            display:none;
            
 
         }
