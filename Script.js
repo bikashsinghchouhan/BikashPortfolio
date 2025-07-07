@@ -150,7 +150,7 @@ gsap.from(".rightSection img,hr", {
 
 
 
-gsap.from(".secondSection h1,h5", {
+gsap.from(".secondSection ,h5", {
   scrollTrigger: {
     trigger: ".mySkils h1",
     toggleActions: "play reset play reset"
