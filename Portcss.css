@@ -617,19 +617,19 @@ ul.inline-list li {
     /* Keyframes for animations */
     @keyframes loadHtml {
         to {
-            width: 94%;
+            width: 90%;
         }
     }
 
     @keyframes loadCss {
         to {
-            width: 84%;
+            width: 50%;
         }
     }
 
     @keyframes loadJs {
         to {
-            width: 74%;
+            width: 65%;
         }
     }
 
