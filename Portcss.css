@@ -472,7 +472,14 @@ ul.inline-list li {
     padding:20px;
     font-family: 'Times New Roman', Times, serif;
 }
-
+@media(max-width:426px){
+    .about {   
+    text-align: justify;
+    padding: 20px 30px;
+        margin: 4rem;
+   
+}
+}
 
 
 
@@ -482,7 +489,203 @@ ul.inline-list li {
     margin-bottom: 10px;
 }
 
-.my-skills {
+ /*===============skills section===============*/
+    section {
+        padding: 0px 0%;
+
+    }
+
+    *::selection {
+        color: var(--bg-color);
+        background: var(--main-color);
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    :root {
+        --main-color: #033a80;
+        --bg-color: #fff;
+        --text-color: #0f0c27;
+        --hover: hsl(260, 100%, 51%);
+        --bg-home-color: #e2d8d8;
+        --big-font: 3.2rem;
+        --medium-font: 1.8rem;
+        --p-font: 0.941rem;
+
+    }
+  
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2rem;
+        margin: 4rem;
+        padding: 0 2rem;
+    }
+
+
+
+    .skills-image img {
+        width: 100%;
+        padding-left: 4rem;
+        object-position: center;
+        transition: transform 0.5s ease-in-out;
+        mix-blend-mode:;
+    }
+
+    .skills-image img:hover {
+        transform: scale(1.05);
+    }
+
+    .box-bars {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        margin-bottom: 1.5rem;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .box-bars:hover {
+        transform: translateY(-5px);
+    }
+
+    .box-bars h3,
+    .box-bars span {
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .box-bars h3:hover,
+    .box-bars span:hover {
+        color: var(--main-color);
+    }
+
+    .light-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.5rem;
+        background: hsla(260, 100%, 44%, 0.2);
+        border-radius: 0.4rem;
+    }
+
+    .percent-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0.5rem;
+        background: var(--main-color);
+        border-radius: 0.5rem;
+        width: 0;
+        /* Initially set to 0 to hide */
+    }
+
+    [data-animate="true"].html-bar {
+        animation: loadHtml 1s forwards;
+    }
+
+    [data-animate="true"].css-bar {
+        animation: loadCss 1s forwards;
+    }
+
+    [data-animate="true"].js-bar {
+        animation: loadJs 1s forwards;
+    }
+
+    [data-animate="true"].CLanguage-bar {
+        animation: loadJava 1s forwards;
+    }
+
+    [data-animate="true"].python-bar {
+        animation: loadPython 1s forwards;
+    }
+
+    [data-animate="true"].dart-bar {
+        animation: loadDart 1s forwards;
+    }
+
+    /* Keyframes for animations */
+    @keyframes loadHtml {
+        to {
+            width: 94%;
+        }
+    }
+
+    @keyframes loadCss {
+        to {
+            width: 84%;
+        }
+    }
+
+    @keyframes loadJs {
+        to {
+            width: 74%;
+        }
+    }
+
+    @keyframes loadJava {
+        to {
+            width: 60%;
+        }
+    }
+
+    @keyframes loadPython {
+        to {
+            width: 70%;
+        }
+    }
+
+    @keyframes loadDart {
+        to {
+            width: 60%;
+        }
+    }
+
+    @media(max-width:768px) {
+        .skills-container {
+            grid-template-columns: 1fr;
+             margin-bottom: 50px;
+        }
+
+        .skills-image img {
+            padding-left: 0;
+            width: 110%;
+            padding: 0 2rem;
+            
+
+        }
+
+        .skills-img {
+            padding-top: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+         .skills-container {
+        
+        gap: 1.5rem;
+        margin: 0rem;
+        padding: 0 2rem;
+    }
+
+
+    }
+
+    @media(max-width:425px) {
+        .skills-image img {
+            padding-left: 0;
+            width: 110%;
+           
+
+        }
+
+    }
+/* .my-skills {
     width: 90%;
     justify-content: space-around;
     display: flex;
@@ -580,7 +783,7 @@ ul.inline-list li {
 
 
 /* Responsive Design */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .skills-section {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -590,9 +793,9 @@ ul.inline-list li {
     .skills-section {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
 
-
+ 
 /*--------------------------------------------*/
 .forthSection h1,
 .secondSection h1,
