@@ -73,6 +73,44 @@ document.addEventListener("keydown", function (e) {
 
 
 
+//*******************************animation of skills ************************* */
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillSection = document.getElementById('skills');
+            const progressBars = document.querySelectorAll('.percent-bar');
+
+            // Callback function for Intersection Observer
+            const observerCallback = (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        progressBars.forEach(bar => {
+                            // Reset the width to 0 to restart the animation
+                            bar.style.width = '0';
+                            // Trigger the animation by setting the data-animate attribute
+                            bar.setAttribute('data-animate', 'true');
+                        });
+                    } else {
+                        progressBars.forEach(bar => {
+                            // Set data-animate back to false when the section is out of view
+                            bar.setAttribute('data-animate', 'false');
+                        });
+                    }
+                });
+            };
+
+            // Intersection Observer options
+            const observerOptions = {
+                root: null, // Uses the viewport
+                threshold: 0.2 // Trigger when 20% of the section is visible
+            };
+
+            // Creating the Intersection Observer
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            // Start observing the skills section
+            observer.observe(skillSection);
+        });
+
 
 
 
