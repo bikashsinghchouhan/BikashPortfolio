@@ -29,7 +29,7 @@ function closeMenu() {
 // Disable right-click
 document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
-  alert("Right-click is disabled!");
+  //alert("Right-click is disabled!");
 });
 
 // Disable keyboard shortcuts
@@ -143,7 +143,7 @@ gsap.from(".skills-container", {
   ease: "power2.out",
   opacity:0,
   duration: 1,
-  delay: 0.4,
+  delay: 0.2,
   
 })
 
