@@ -40,7 +40,7 @@ document.addEventListener("keydown", function (e) {
     (e.ctrlKey && ["U", "S", "P", "C", "X", "V"].includes(e.key))
   ) {
     e.preventDefault();
-    alert("This action is disabled!");
+    // alert("This action is disabled!");
   }
 });
 
@@ -143,7 +143,7 @@ gsap.from(".skills-container", {
   ease: "power2.out",
   opacity:0,
   duration: 1,
-  delay: 0,
+  delay: 0.4,
   
 })
 
