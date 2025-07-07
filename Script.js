@@ -134,6 +134,18 @@ gsap.from(".contact,.Resume", {
   stagger: 0.5,
   
 })
+gsap.from(".skills-container", {
+  scrollTrigger: {
+    trigger: ".skills-container", 
+    toggleActions: "play reset play reset"
+  },
+  y: 40,
+  ease: "power2.out",
+  opacity:0,
+  duration: 1,
+  delay: 0,
+  
+})
 
 gsap.from(".rightSection img,hr", {
   scrollTrigger: {
@@ -162,7 +174,19 @@ gsap.from(".secondSection h5", {
   delay: 0.1,
   stagger: 0.5,
 })
-
+gsap.from(".heading h2", {
+  scrollTrigger: {
+    trigger: ".heading h2",
+    toggleActions: "play reset play reset"
+  },
+  y: 30,
+  ease: "power2.out",
+  opacity: 0,
+  duration: 1,
+  delay: 0,
+  stagger: 0.5,
+  
+})
 gsap.from("#Education h2", {
   scrollTrigger: {
     trigger: "#Education h2",
