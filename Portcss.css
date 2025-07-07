@@ -78,12 +78,17 @@ hr{
     margin: 40px auto;
 }
 
-.secondSection,
+
 .thirdSection,
 .forthSection {
     max-width: 100vw;
     height: auto;
     margin-bottom: 100px;
+}
+.secondSection{
+     max-width: 100vw;
+    height: auto;
+    margin-bottom: 0px;
 }
 
   
