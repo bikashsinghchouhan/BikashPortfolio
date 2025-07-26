@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -436,7 +437,13 @@ h2,
         left: 32px;
     }
 
-
+.timeline-fill {
+    position: absolute;
+    top: 0;
+  left: 32px;
+    
+  
+}
     .timeline-item {
         width: 100%;
         padding-left: 50px;
