@@ -358,6 +358,18 @@ h2,
     transition: transform 0.3s ease-in-out;
 }
 
+.timeline-fill {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 0%;
+    background-color: white;
+    z-index: -1; /* Behind the dots and items */
+    border-radius: 20px;
+}
+
 .left {
     left: 0;
     text-align: left;
