@@ -264,3 +264,20 @@ gsap.utils.toArray(".project-box").forEach((proj) => {
 
   });
 });
+
+ gsap.to(".timeline-fill", {
+    height: "100%",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".timeline",
+      start: "top center",
+    end: "bottom center",
+    
+
+      scrub: true,
+      //markers: true
+    }
+  });
+
+
+
