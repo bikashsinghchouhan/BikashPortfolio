@@ -200,7 +200,7 @@ a {
     }
 
     .leftSection {
-        padding-top: 40px;
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -285,7 +285,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin: 20px 0;
+        margin: 0px 0;
 
     }
 
