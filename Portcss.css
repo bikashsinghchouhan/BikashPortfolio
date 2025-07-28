@@ -609,28 +609,34 @@ ul.inline-list li {
         /* Initially set to 0 to hide */
     }
 
-    [data-animate="true"].html-bar {
-        animation: loadHtml 1s forwards;
+   [data-animate="true"].html-bar {
+        animation: loadHtml 1.5s forwards;
     }
 
     [data-animate="true"].css-bar {
-        animation: loadCss 1s forwards;
+        animation: loadCss 1.5s forwards;
     }
 
     [data-animate="true"].js-bar {
-        animation: loadJs 1s forwards;
+        animation: loadJs 1.5s forwards;
     }
 
     [data-animate="true"].CLanguage-bar {
-        animation: loadJava 1s forwards;
+        animation: loadJava 1.5s forwards;
     }
 
     [data-animate="true"].python-bar {
-        animation: loadPython 1s forwards;
+        animation: loadPython 1.5s forwards;
     }
 
-    [data-animate="true"].dart-bar {
-        animation: loadDart 1s forwards;
+    [data-animate="true"].php-bar {
+        animation: loadphp 1.5s forwards;
+    }
+    [data-animate="true"].react-bar {
+        animation: loadReact 1.5s forwards;
+    }
+    [data-animate="true"].tailwind-bar {
+        animation: loadTailwind 1.5s forwards;
     }
 
     /* Keyframes for animations */
@@ -664,9 +670,20 @@ ul.inline-list li {
         }
     }
 
-    @keyframes loadDart {
+    @keyframes loadphp {
         to {
             width: 60%;
+        }
+    }
+
+    @keyframes loadReact{
+        to{
+            width:30%;
+        }
+    }
+    @keyframes loadTailwind{
+        to{
+            width:80%;
         }
     }
 
