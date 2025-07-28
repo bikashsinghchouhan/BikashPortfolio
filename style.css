@@ -69,10 +69,18 @@ nav h1 a{
 }
 
 .hamberger{
-    display:none;
+   display:none;
     cursor: pointer;
+    border:1px solid white;
+    border-radius: 5px;
+    padding:5px;
 }
-
+.block {
+     width: 25px;
+    height: 2.5px;
+    margin: 5px;
+    background-color: white;
+}  
 
 
 
@@ -109,12 +117,7 @@ nav h1 a{
     display: block;
 }
 
-.block {
-    width: 30px;
-    height: 2.5px;
-    margin: 5px;
-    background-color: white;
-}   
+ 
 
 @media(max-width:768px) {
     .nav-links{
