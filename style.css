@@ -73,12 +73,13 @@ nav h1 a{
     cursor: pointer;
     border:1px solid white;
     border-radius: 5px;
-    padding:5px;
+    padding:3.5px;
 }
 .block {
      width: 25px;
     height: 2.5px;
     margin: 5px;
+  border-radius: 20px;
     background-color: white;
 }  
 
