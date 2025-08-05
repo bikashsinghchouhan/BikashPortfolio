@@ -257,9 +257,9 @@ gsap.utils.toArray(".project-box").forEach((proj) => {
       toggleActions: "play reset play reset",
       markers: false
     },
-    scale: 0.8,
-    opacity: 0.5,
-    duration: 1.5,
+    scale: 0.85,
+    opacity: 0,
+    duration: 0.6,
     ease: "power2.out"
 
   });
