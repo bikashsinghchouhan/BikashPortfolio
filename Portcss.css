@@ -867,24 +867,96 @@ ul.inline-list li {
     border-bottom:3px solid white;
    
 }
+
 .project-box:hover {
-    scale:1.08;
-    background-color: #321727;
+    transform: scale(1.2);
+    background-color: hsl(265, 33%, 20%);
     transition: .2s ease-in-out;
 }
 
-.project-box h1 {
-    padding-bottom: 1px;
-    text-align: center;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 
-    margin-bottom: 30px;
+
+.project-box .project-No,
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.project-box .project-No{
+border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+padding-bottom: 1px;
+margin-bottom: 20px;
+}
+
+.project-box .project-No h1 {
+    
+    text-align: center;
+    font-size: 25px;
 
 }
 
-.project-box div h3 {
-    text-align: center;
+.project-box .project-title {
+    background-color: #7b8692;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    background: linear-gradient(rgb(59, 59, 135), rgb(48, 87, 48));
 }
+
+.project-box .project-lang {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* background-color: #9c97f1; */
+    padding: 10px;
+ 
+
+}
+
+
+.project-container .project-box div li {
+    padding: 5px;
+    margin: 10px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    max-width: fit-content;
+    max-height: fit-content;
+    list-style: none;
+    cursor: pointer;
+    background-color: hsl(268, 19%, 17%);
+}
+
+.project-container .project-box div li:hover {
+    background-color: hsl(267, 96%, 85%);
+    transition: 0.2s ease;
+}
+
+
+.project-container .project-box .project-link {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    text-decoration: wavy;
+    /* background-color: #ff0400; */
+}
+
+.project-container .project-box .project-link h3 {
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 8px;
+    /* color: red; */
+    background-color: hsl(214, 80%, 15%);
+    padding: 5px 10px 5px 10px;
+}
+.project-container .project-box .project-link h3:hover {
+      background-color: hsl(214, 80%, 20%);
+       transition: 0.2s ease;
+}
+
 
 
 /*--skills -*/
