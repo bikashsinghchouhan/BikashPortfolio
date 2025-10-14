@@ -200,7 +200,7 @@ a {
     }
 
     .leftSection {
-        padding-top: 20px;
+         padding-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -290,7 +290,7 @@ a {
     }
 
     .leftSection {
-        margin-top: 40px;
+        margin-top: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
