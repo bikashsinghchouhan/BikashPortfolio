@@ -852,6 +852,7 @@ ul.inline-list li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+        margin-top: 100px;
 }
 
 .project-box {
