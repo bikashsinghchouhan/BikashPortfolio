@@ -1037,3 +1037,111 @@ margin-bottom: 20px;
 .contact {
     margin-top: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Contact- form styling */
+
+#Contact-us{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    /* background: #1a8be1; */
+
+}
+
+
+.form {
+    background: #8a8484;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: rgb(59, 56, 56);
+    letter-spacing: 0.5px;
+    padding-left: 20px;
+}
+
+.inputGroup {
+    position: relative;
+    margin: 15px 0;
+}
+
+.inputGroup input {
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    color: #494747;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+     background: #8a8484;
+}
+
+.inputGroup label {
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #9da3ab;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background: #8a8484;
+    padding: 0 4px;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label {
+    top: -8px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.inputGroup input:focus {
+    border-color: #fff;
+    box-sizing: 0 0 3px #007bff;
+
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+button{
+    padding:10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(79, 76, 76);
+    font-size: 16px;
+    background-color: rgb(189, 182, 182);
+    
+}
+
+
+
+
+
+
+
+
+
+
