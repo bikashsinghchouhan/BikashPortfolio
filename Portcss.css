@@ -951,7 +951,7 @@ margin-bottom: 20px;
 
 
 .form {
-    background: #8a8484;
+    background-color:rgb(19, 19, 41) ;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -961,7 +961,7 @@ margin-bottom: 20px;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 25px;
-    color: rgb(59, 56, 56);
+    color: white;
     letter-spacing: 0.5px;
     padding-left: 55px;
 }
@@ -979,7 +979,7 @@ margin-bottom: 20px;
     outline: none;
     border: 1px solid #aaa;
     border-radius: 6px;
-     background: #8a8484;
+       background: rgb(19, 19, 41);
 }
 
 .inputGroup label {
@@ -991,7 +991,7 @@ margin-bottom: 20px;
     color: #9da3ab;
     pointer-events: none;
     transition: 0.3s ease;
-    background: #8a8484;
+    background: rgb(19, 19, 41);
     padding: 0 4px;
 }
 
@@ -1021,8 +1021,11 @@ button{
     cursor: pointer;
     color: rgb(79, 76, 76);
     font-size: 16px;
-    background-color: rgb(189, 182, 182);
+    background-color:hsl(240, 40%, 70%) ; 
     
+}
+button:hover{
+    opacity:80%;
 }
 
 
