@@ -64,7 +64,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(109, 107, 107);
+    /* background-color: rgb(109, 107, 107); */
+   background-color: rgb(20, 20, 80);
     width:100%;
 }
 nav h1 a{
